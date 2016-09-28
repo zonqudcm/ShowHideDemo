@@ -20,21 +20,21 @@ public class MainActivity extends AppCompatActivity {
         final Button showButton = (Button) findViewById(R.id.showButton);
         final Button hideButton = (Button) findViewById(R.id.hideButton);
 
-        hideButton.setVisibility(View.INVISIBLE);
+        hideButton.setVisibility(View.GONE);
 
         showButton.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View view) {
                 hideButton.setVisibility(View.VISIBLE);
-                showButton.setVisibility(View.INVISIBLE);
+                showButton.setVisibility(View.GONE);
             }
         });
 
         hideButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                hideButton.setVisibility(View.INVISIBLE);
+                hideButton.setVisibility(View.GONE);
                 showButton.setVisibility(View.VISIBLE);
             }
         });
